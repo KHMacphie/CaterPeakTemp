@@ -300,7 +300,7 @@ mv.wndws$temp.logmax.p <- rep(NA, nrow(mv.wndws))
 slidwin.temp <- data.frame(siteyear=temp$siteyear)
 
 # Run the models
-for(i in nrow(mv.wndws)){
+for(i in 1:nrow(mv.wndws)){
   #mean time window
   slidwin.temp$temp.mu <- apply(temp[,bounds$start[which(bounds$ID==mv.wndws$mu.ID[i])]
                                       :bounds$end[which(bounds$ID==mv.wndws$mu.ID[i])]
